@@ -13,3 +13,6 @@ c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\Lo
 c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.pdb
 c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicators.WPF.dll
 c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicators.WPF.pdb
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicatorsDemo.exe.config
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.exe
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.pdb
