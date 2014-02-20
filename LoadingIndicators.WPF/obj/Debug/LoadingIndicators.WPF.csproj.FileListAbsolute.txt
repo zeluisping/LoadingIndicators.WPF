@@ -1,0 +1,16 @@
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\bin\Debug\LoadingIndicators.WPF.dll
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\bin\Debug\LoadingIndicators.WPF.pdb
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF_MarkupCompile.cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF_MarkupCompile.lref
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingWave.baml
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.g.resources
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.Properties.Resources.resources
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.csproj.GenerateResource.Cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.dll
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.pdb
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingFlipPlane.baml
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingThreeDots.baml
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.csprojResolveAssemblyReference.cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingPulse.baml
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingDoubleBounce.baml

@@ -1,0 +1,15 @@
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicatorsDemo.exe.config
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicatorsDemo.exe
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicatorsDemo.pdb
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.csprojResolveAssemblyReference.cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\MainWindow.baml
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\MainWindow.g.cs
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\App.g.cs
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo_MarkupCompile.cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.g.resources
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.Properties.Resources.resources
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.csproj.GenerateResource.Cache
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.exe
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.pdb
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicators.WPF.dll
+c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicatorsDemo\bin\Debug\LoadingIndicators.WPF.pdb
