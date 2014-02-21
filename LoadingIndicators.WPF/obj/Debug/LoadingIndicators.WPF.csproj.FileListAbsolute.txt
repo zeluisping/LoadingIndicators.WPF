@@ -31,3 +31,5 @@ D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicator
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.csproj.GenerateResource.Cache
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.dll
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.pdb
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles.baml
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingRing.baml

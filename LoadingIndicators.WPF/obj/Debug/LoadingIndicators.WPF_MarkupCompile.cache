@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-6-973358769
+8-263714676
 
 4257618040
 121654848548
-Colors.xaml;Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
+Colors.xaml;Styles.xaml;Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingRing.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
 
 False
 

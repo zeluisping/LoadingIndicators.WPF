@@ -26,12 +26,14 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="0"/>
-        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" Style="{DynamicResource LoadingIndicatorThreeDotsStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="0" Style="{DynamicResource LoadingIndicatorFlipPlaneStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" Style="{DynamicResource LoadingIndicatorPulseStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" Style="{DynamicResource LoadingIndicatorDoublePulseStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="0" Style="{DynamicResource LoadingIndicatorDoubleBounceStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" Style="{DynamicResource LoadingIndicatorFlipPlaneStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="0" Style="{DynamicResource LoadingIndicatorPulseStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" Style="{DynamicResource LoadingIndicatorRingStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="1" Style="{DynamicResource LoadingIndicatorThreeDotsStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="1">
+            <!--Style="{DynamicResource LoadingIndicatorWaveStyle}"-->
+        </loadin:LoadingIndicator>
     </Grid>
 </Window>

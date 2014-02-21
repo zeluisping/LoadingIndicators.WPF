@@ -28,3 +28,4 @@ D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicator
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.g.resources
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.Properties.Resources.resources
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\LoadingIndicatorsDemo.csproj.GenerateResource.Cache
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicatorsDemo\obj\Debug\App.baml
