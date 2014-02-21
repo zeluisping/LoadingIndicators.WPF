@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-5-1015215829
+793135545
 
 5615857553
 121654848548
-Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
+Colors.xaml;Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingRing.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
 
 True
 

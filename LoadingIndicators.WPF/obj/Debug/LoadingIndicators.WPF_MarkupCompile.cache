@@ -4,17 +4,17 @@
 library
 C#
 .cs
-c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\
+D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\
 LoadingIndicators.WPF
 none
 false
 DEBUG;TRACE
 
-5-1015215829
+6-973358769
 
 4257618040
 121654848548
-Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
+Colors.xaml;Styles\LoadingDoubleBounce.xaml;Styles\LoadingFlipPlane.xaml;Styles\LoadingPulse.xaml;Styles\LoadingThreeDots.xaml;Styles\LoadingWave.xaml;
 
 False
 
