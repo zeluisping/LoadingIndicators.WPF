@@ -16,7 +16,6 @@ c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\Lo
 c:\users\zéluís\documents\visual studio 2013\Projects\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Styles\LoadingDoubleBounce.baml
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\bin\Debug\LoadingIndicators.WPF.dll
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\bin\Debug\LoadingIndicators.WPF.pdb
-D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF.csprojResolveAssemblyReference.cache
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\Colors.baml
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\GitHub\LoadingIndicators.WPF\LoadingIndicators.WPF\obj\Debug\LoadingIndicators.WPF_MarkupCompile.cache

@@ -19,7 +19,7 @@
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>
                                 <VisualState x:Name="Active">
-                                    <Storyboard RepeatBehavior="Forever" Duration="0:0:1.900">
+                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}" RepeatBehavior="Forever" Duration="0:0:1.900">
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_Ellipse0" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.500" Value="1"/>
@@ -75,19 +75,21 @@
                             </Style>
                         </Border.Resources>
 
-                        <Grid Width="70" Height="20">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="5"/>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="5"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+                        <Border Background="Transparent">
+                            <Grid Width="70" Height="20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
 
-                            <Ellipse x:Name="PART_Ellipse0" Grid.Column="0" Fill="{TemplateBinding Foreground}"/>
-                            <Ellipse x:Name="PART_Ellipse1" Grid.Column="2" Fill="{TemplateBinding Foreground}"/>
-                            <Ellipse x:Name="PART_Ellipse2" Grid.Column="4" Fill="{TemplateBinding Foreground}"/>
-                        </Grid>
+                                <Ellipse x:Name="PART_Ellipse0" Grid.Column="0" Fill="{TemplateBinding Foreground}"/>
+                                <Ellipse x:Name="PART_Ellipse1" Grid.Column="2" Fill="{TemplateBinding Foreground}"/>
+                                <Ellipse x:Name="PART_Ellipse2" Grid.Column="4" Fill="{TemplateBinding Foreground}"/>
+                            </Grid>
+                        </Border>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

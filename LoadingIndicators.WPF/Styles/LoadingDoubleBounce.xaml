@@ -19,7 +19,7 @@
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>
                                 <VisualState x:Name="Active">
-                                    <Storyboard RepeatBehavior="Forever" Duration="0:0:1.000">
+                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}" RepeatBehavior="Forever" Duration="0:0:1.000">
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_Ellipse0" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                             <EasingDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
                                             <EasingDoubleKeyFrame KeyTime="0:0:1.000" Value="1"/>
@@ -41,7 +41,7 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Grid>
+                        <Grid Background="Transparent">
                             <Ellipse x:Name="PART_Ellipse0" RenderTransformOrigin="0.5,0.5" Opacity="0.3" Fill="{TemplateBinding Foreground}">
                                 <Ellipse.RenderTransform>
                                     <ScaleTransform/>

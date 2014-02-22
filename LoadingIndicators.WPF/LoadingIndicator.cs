@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,24 @@ namespace LoadingIndicators.WPF
         /// Identifies the <see cref="LoadingIndicators.WPF.LoadingIndicator.SpeedRatio"/> dependency property.
         /// </summary>
         public static readonly DependencyProperty SpeedRatioProperty =
-            DependencyProperty.Register("SpeedRatio", typeof(double), typeof(LoadingIndicator), new PropertyMetadata(1));
+            DependencyProperty.Register("SpeedRatio", typeof(double), typeof(LoadingIndicator), new PropertyMetadata(1d, (o, e) => {
+                LoadingIndicator li = (LoadingIndicator) o;
+
+                if (li.PART_Border != null) {
+                    foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border)) {
+                        if (group.Name == "ActiveStates") {
+                            foreach (VisualState state in group.States) {
+                                if (state.Name == "Active") {
+                                    state.Storyboard.SetSpeedRatio(li.PART_Border, (double) e.NewValue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }));
+
+        // Variables
+        protected Border PART_Border;
 
         /// <summary>
         /// Get/set the speed ratio of the animation.
@@ -37,8 +55,20 @@ namespace LoadingIndicators.WPF
         {
             base.OnApplyTemplate();
 
-            Border border = (Border) GetTemplateChild("PART_Border");
-            VisualStateManager.GoToElementState(border, "Active", false);
+            PART_Border = (Border) GetTemplateChild("PART_Border");
+
+            if (PART_Border != null) {
+                VisualStateManager.GoToElementState(PART_Border, "Active", false);
+                foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(PART_Border)) {
+                    if (group.Name == "ActiveStates") {
+                        foreach (VisualState state in group.States) {
+                            if (state.Name == "Active") {
+                                state.Storyboard.SetSpeedRatio(PART_Border, this.SpeedRatio);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>

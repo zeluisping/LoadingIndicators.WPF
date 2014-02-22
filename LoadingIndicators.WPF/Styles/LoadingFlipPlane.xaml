@@ -19,7 +19,7 @@
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>
                                 <VisualState x:Name="Active">
-                                    <Storyboard RepeatBehavior="Forever" Duration="0:0:1.600">
+                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}" RepeatBehavior="Forever" Duration="0:0:1.600">
                                         <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.000" Storyboard.TargetName="PART_Rect" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.400" Value="0"/>
@@ -34,11 +34,14 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Rectangle x:Name="PART_Rect" RenderTransformOrigin="0.5,0.5" Fill="{TemplateBinding Foreground}">
-                            <Rectangle.RenderTransform>
-                                <ScaleTransform/>
-                            </Rectangle.RenderTransform>
-                        </Rectangle>
+                        
+                        <Grid Background="Transparent">
+                            <Rectangle x:Name="PART_Rect" RenderTransformOrigin="0.5,0.5" Fill="{TemplateBinding Foreground}">
+                                <Rectangle.RenderTransform>
+                                    <ScaleTransform/>
+                                </Rectangle.RenderTransform>
+                            </Rectangle>
+                        </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
