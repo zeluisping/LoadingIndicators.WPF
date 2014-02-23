@@ -19,14 +19,46 @@
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>
                                 <VisualState x:Name="Active">
-                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}">
-                                        <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas0" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                            <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
-                                            <LinearDoubleKeyFrame KeyTime="0:0:3.000" Value="360"/>
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.000" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
                                         </DoubleAnimationUsingKeyFrames>
-                                        <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas1" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                            <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
-                                            <LinearDoubleKeyFrame KeyTime="0:0:2.000" Value="-360"/>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.100" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.200" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.300" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.400" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas4" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.500" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas5" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.600" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas6" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.700" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas7" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                            <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
                                         </DoubleAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -35,66 +67,66 @@
 
                         <Border.Resources>
                             <Style TargetType="{x:Type Canvas}">
-                                <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <RotateTransform/>
-                                    </Setter.Value>
-                                </Setter>
+                                <Setter Property="Opacity" Value="0.3"/>
+                            </Style>
+                            
+                            <Style TargetType="{x:Type Path}">
+                                <Setter Property="StrokeThickness" Value="10"/>
                             </Style>
                         </Border.Resources>
 
-                        <Grid Background="Transparent">
+                        <Grid Background="Transparent" Width="40" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
                             <Grid.RenderTransform>
-                                <TransformGroup>
-                                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
-                                    <TranslateTransform X="10" Y="10"/>
-                                </TransformGroup>
+                                <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
                             </Grid.RenderTransform>
-                            <Canvas x:Name="PART_Canvas0" Opacity="1.0">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
-                                    <Path.Data>
-                                        <PathGeometry>
-                                            <PathGeometry.Transform>
-                                                <TranslateTransform X="20" Y="-20"/>
-                                            </PathGeometry.Transform>
-                                            <PathGeometry.Figures>
-                                                <PathFigureCollection>
-                                                    <PathFigure StartPoint="0,0">
-                                                        <PathFigure.Segments>
-                                                            <PathSegmentCollection>
-                                                                <ArcSegment Size="40,40" IsLargeArc="True" SweepDirection="CounterClockwise" Point="40,40" />
-                                                            </PathSegmentCollection>
-                                                        </PathFigure.Segments>
-                                                    </PathFigure>
-                                                </PathFigureCollection>
-                                            </PathGeometry.Figures>
-                                        </PathGeometry>
-                                    </Path.Data>
-                                </Path>
+                            
+                            <Canvas x:Name="PART_Canvas0">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="0" Y="-14"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 10,0 A 40,40 0 0 1 30,0"/>
                             </Canvas>
-
-                            <Canvas x:Name="PART_Canvas1" Opacity="0.3">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
-                                    <Path.Data>
-                                        <PathGeometry>
-                                            <PathGeometry.Transform>
-                                                <TranslateTransform X="-7" Y="7"/>
-                                            </PathGeometry.Transform>
-                                            <PathGeometry.Figures>
-                                                <PathFigureCollection>
-                                                    <PathFigure StartPoint="0,0">
-                                                        <PathFigure.Segments>
-                                                            <PathSegmentCollection>
-                                                                <ArcSegment Size="30,30" IsLargeArc="True" SweepDirection="Clockwise" Point="40,40" />
-                                                            </PathSegmentCollection>
-                                                        </PathFigure.Segments>
-                                                    </PathFigure>
-                                                </PathFigureCollection>
-                                            </PathGeometry.Figures>
-                                        </PathGeometry>
-                                    </Path.Data>
-                                </Path>
+                            <Canvas x:Name="PART_Canvas1">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="12" Y="-12"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 40,14 A 40,40 0 0 0 24,0"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas2">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="14" Y="0"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 40,10 A 40,40 0 0 1 40,30"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas3">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="12" Y="12"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 40,24 A 40,40 0 0 1 24,40"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas4">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="0" Y="14"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 10,40 A 40,40 0 0 0 30,40"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas5">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="-12" Y="12"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 0,24 A 40,40 0 0 0 14,40"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas6">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="-14" Y="0"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 0,10 A 40,40 0 0 0 0,30"/>
+                            </Canvas>
+                            <Canvas x:Name="PART_Canvas7">
+                                <Canvas.RenderTransform>
+                                    <TranslateTransform X="-12" Y="-12"/>
+                                </Canvas.RenderTransform>
+                                <Path Stroke="{TemplateBinding Foreground}" Data="M 0,14 A 40,40 0 0 1 14,0"/>
                             </Canvas>
                         </Grid>
                     </Border>
@@ -102,5 +134,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
 </ResourceDictionary>
