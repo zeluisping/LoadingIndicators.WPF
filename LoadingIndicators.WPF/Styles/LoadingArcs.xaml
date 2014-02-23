@@ -45,8 +45,11 @@
                         </Border.Resources>
 
                         <Grid Background="Transparent">
+                            <Grid.RenderTransform>
+                                <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                            </Grid.RenderTransform>
                             <Canvas x:Name="PART_Canvas0" Opacity="1.0">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="6">
+                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
                                     <Path.Data>
                                         <PathGeometry>
                                             <PathGeometry.Transform>
@@ -69,18 +72,18 @@
                             </Canvas>
 
                             <Canvas x:Name="PART_Canvas1" Opacity="0.3">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="6">
+                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
                                     <Path.Data>
                                         <PathGeometry>
                                             <PathGeometry.Transform>
-                                                <TranslateTransform X="-13" Y="13"/>
+                                                <TranslateTransform X="-7" Y="7"/>
                                             </PathGeometry.Transform>
                                             <PathGeometry.Figures>
                                                 <PathFigureCollection>
                                                     <PathFigure StartPoint="0,0">
                                                         <PathFigure.Segments>
                                                             <PathSegmentCollection>
-                                                                <ArcSegment Size="34,34" IsLargeArc="True" SweepDirection="Clockwise" Point="40,40" />
+                                                                <ArcSegment Size="30,30" IsLargeArc="True" SweepDirection="Clockwise" Point="40,40" />
                                                             </PathSegmentCollection>
                                                         </PathFigure.Segments>
                                                     </PathFigure>

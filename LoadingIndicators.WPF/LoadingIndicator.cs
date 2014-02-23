@@ -22,13 +22,15 @@ namespace LoadingIndicators.WPF
             DependencyProperty.Register("SpeedRatio", typeof(double), typeof(LoadingIndicator), new PropertyMetadata(1d, (o, e) => {
                 LoadingIndicator li = (LoadingIndicator) o;
 
-                if (li.PART_Border != null) {
-                    foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border)) {
-                        if (group.Name == "ActiveStates") {
-                            foreach (VisualState state in group.States) {
-                                if (state.Name == "Active") {
-                                    state.Storyboard.SetSpeedRatio(li.PART_Border, (double) e.NewValue);
-                                }
+                if (li.PART_Border == null || li.IsActive == false) {
+                    return;
+                }
+
+                foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border)) {
+                    if (group.Name == "ActiveStates") {
+                        foreach (VisualState state in group.States) {
+                            if (state.Name == "Active") {
+                                state.Storyboard.SetSpeedRatio(li.PART_Border, (double) e.NewValue);
                             }
                         }
                     }
@@ -52,6 +54,16 @@ namespace LoadingIndicators.WPF
                 } else {
                     VisualStateManager.GoToElementState(li.PART_Border, "Active", false);
                     li.PART_Border.Visibility = Visibility.Visible;
+
+                    foreach (VisualStateGroup group in VisualStateManager.GetVisualStateGroups(li.PART_Border)) {
+                        if (group.Name == "ActiveStates") {
+                            foreach (VisualState state in group.States) {
+                                if (state.Name == "Active") {
+                                    state.Storyboard.SetSpeedRatio(li.PART_Border, li.SpeedRatio);
+                                }
+                            }
+                        }
+                    }
                 }
             }));
 

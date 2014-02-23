@@ -5,7 +5,8 @@
         Title="LoadingIndicators.WPF (Demo)"
         Width="525"
         Height="350"
-        Background="#EEEEF2">
+        Background="#EEEEF2"
+        Foreground="#141418">
     <!--
     Light: EEEEF2
     Dark: 141418
