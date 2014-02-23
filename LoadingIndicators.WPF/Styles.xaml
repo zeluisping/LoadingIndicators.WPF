@@ -3,6 +3,7 @@
                     xmlns:controls="clr-namespace:LoadingIndicators.WPF">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingArcs.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingArcsRing.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingDoubleBounce.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingFlipPlane.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingPulse.xaml"/>
@@ -12,6 +13,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="LoadingIndicatorArcsStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorArcsStyleKey}"/>
+    <Style x:Key="LoadingIndicatorArcsRingStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorArcsRingStyleKey}"/>
     <Style x:Key="LoadingIndicatorDoubleBounceStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorDoubleBounceStyleKey}"/>
     <Style x:Key="LoadingIndicatorFlipPlaneStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorFlipPlaneStyleKey}"/>
     <Style x:Key="LoadingIndicatorPulseStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorPulseStyleKey}"/>

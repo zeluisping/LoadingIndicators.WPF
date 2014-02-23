@@ -35,6 +35,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <loadin:LoadingIndicator Grid.Column="0" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsArcsActive}" Style="{DynamicResource LoadingIndicatorArcsStyle}"/>
+        <!--<loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsArcsRingActive}" Style="{DynamicResource LoadingIndicatorArcsRingStyle}"/>-->
         <loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsDoubleBounceActive}" Style="{DynamicResource LoadingIndicatorDoubleBounceStyle}"/>
         <loadin:LoadingIndicator Grid.Column="2" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsFlipPlaneActive}" Style="{DynamicResource LoadingIndicatorFlipPlaneStyle}"/>
         <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsPulseActive}" Style="{DynamicResource LoadingIndicatorPulseStyle}"/>
