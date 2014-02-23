@@ -13,8 +13,8 @@
                     <Border x:Name="PART_Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="SizeStates">
-                                <VisualState x:Name="Large" />
-                                <VisualState x:Name="Small" />
+                                <VisualState x:Name="Large"/>
+                                <VisualState x:Name="Small"/>
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>

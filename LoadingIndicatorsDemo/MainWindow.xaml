@@ -28,14 +28,21 @@
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" Style="{DynamicResource LoadingIndicatorDoubleBounceStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" Style="{DynamicResource LoadingIndicatorFlipPlaneStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" Style="{DynamicResource LoadingIndicatorPulseStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" Style="{DynamicResource LoadingIndicatorRingStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" Style="{DynamicResource LoadingIndicatorThreeDotsStyle}"/>
-        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" PreviewMouseDoubleClick="LoadingIndicator_PreviewMouseDoubleClick">
+        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsDoubleBounceActive}" Style="{DynamicResource LoadingIndicatorDoubleBounceStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsFlipPlaneActive}" Style="{DynamicResource LoadingIndicatorFlipPlaneStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsPulseActive}" Style="{DynamicResource LoadingIndicatorPulseStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="0" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsRingActive}" Style="{DynamicResource LoadingIndicatorRingStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="1" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsThreeDotsActive}" Style="{DynamicResource LoadingIndicatorThreeDotsStyle}"/>
+        <loadin:LoadingIndicator Grid.Column="2" Grid.Row="1" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsWaveActive}">
             <!--Style="{DynamicResource LoadingIndicatorWaveStyle}"-->
         </loadin:LoadingIndicator>
+        
+        <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{Binding IsDoubleBounceActive}" />
+        <CheckBox Grid.Row="0" Grid.Column="1" IsChecked="{Binding IsFlipPlaneActive}"/>
+        <CheckBox Grid.Row="0" Grid.Column="2" IsChecked="{Binding IsPulseActive}"/>
+        <CheckBox Grid.Row="1" Grid.Column="0" IsChecked="{Binding IsRingActive}"/>
+        <CheckBox Grid.Row="1" Grid.Column="1" IsChecked="{Binding IsThreeDotsActive}"/>
+        <CheckBox Grid.Row="1" Grid.Column="2" IsChecked="{Binding IsWaveActive}"/>
 
         <Grid Grid.Row="2" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>

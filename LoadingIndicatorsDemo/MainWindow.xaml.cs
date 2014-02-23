@@ -51,6 +51,12 @@ namespace LoadingIndicatorsDemo
         {
             // Variables
             double speedratio;
+            bool isdoublebounceactive;
+            bool isflipplaneactive;
+            bool ispulseactive;
+            bool isringactive;
+            bool isthreedotsactive;
+            bool iswaveactive;
 
             // Properties
             public double SpeedRatio
@@ -69,6 +75,72 @@ namespace LoadingIndicatorsDemo
             {
                 get { return this.SpeedRatio.ToString(); }
             }
+            public bool IsDoubleBounceActive
+            {
+                get { return isdoublebounceactive; }
+                set
+                {
+                    if (isdoublebounceactive != value) {
+                        isdoublebounceactive = value;
+                        OnPropertyChanged("IsDoubleBounceActive");
+                    }
+                }
+            }
+            public bool IsFlipPlaneActive
+            {
+                get { return isflipplaneactive; }
+                set
+                {
+                    if (isflipplaneactive != value) {
+                        isflipplaneactive = value;
+                        OnPropertyChanged("IsFlipPlaneActive");
+                    }
+                }
+            }
+            public bool IsPulseActive
+            {
+                get { return ispulseactive; }
+                set
+                {
+                    if (ispulseactive != value) {
+                        ispulseactive = value;
+                        OnPropertyChanged("IsPulseActive");
+                    }
+                }
+            }
+            public bool IsRingActive
+            {
+                get { return isringactive; }
+                set
+                {
+                    if (isringactive != value) {
+                        isringactive = value;
+                        OnPropertyChanged("IsRingActive");
+                    }
+                }
+            }
+            public bool IsThreeDotsActive
+            {
+                get { return isthreedotsactive; }
+                set
+                {
+                    if (isthreedotsactive != value) {
+                        isthreedotsactive = value;
+                        OnPropertyChanged("IsThreeDotsActive");
+                    }
+                }
+            }
+            public bool IsWaveActive
+            {
+                get { return iswaveactive; }
+                set
+                {
+                    if (iswaveactive != value) {
+                        iswaveactive = value;
+                        OnPropertyChanged("IsWaveActive");
+                    }
+                }
+            }
 
             // Events
             public event PropertyChangedEventHandler PropertyChanged;
@@ -85,6 +157,7 @@ namespace LoadingIndicatorsDemo
             public MainWindowViewModel()
             {
                 this.SpeedRatio = 1.0;
+                this.IsDoubleBounceActive = true;
             }
         }
     }
