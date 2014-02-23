@@ -51,6 +51,7 @@ namespace LoadingIndicatorsDemo
         {
             // Variables
             double speedratio;
+            bool isarcsactive;
             bool isdoublebounceactive;
             bool isflipplaneactive;
             bool ispulseactive;
@@ -74,6 +75,17 @@ namespace LoadingIndicatorsDemo
             public string SpeedRatioText
             {
                 get { return this.SpeedRatio.ToString(); }
+            }
+            public bool IsArcsActive
+            {
+                get { return isarcsactive; }
+                set
+                {
+                    if (isarcsactive != value) {
+                        isarcsactive = value;
+                        OnPropertyChanged("IsArcsActive");
+                    }
+                }
             }
             public bool IsDoubleBounceActive
             {
@@ -157,7 +169,13 @@ namespace LoadingIndicatorsDemo
             public MainWindowViewModel()
             {
                 this.SpeedRatio = 1.0;
+                this.IsArcsActive = true;
                 this.IsDoubleBounceActive = true;
+                this.IsFlipPlaneActive = true;
+                this.IsPulseActive = true;
+                this.IsRingActive = true;
+                this.IsThreeDotsActive = true;
+                this.IsWaveActive = true;
             }
         }
     }
