@@ -19,17 +19,17 @@
                             <VisualStateGroup x:Name="ActiveStates">
                                 <VisualState x:Name="Inactive"/>
                                 <VisualState x:Name="Active">
-                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}" RepeatBehavior="Forever" Duration="0:0:1.000">
+                                    <Storyboard SpeedRatio="{TemplateBinding SpeedRatio}" RepeatBehavior="Forever" Duration="0:0:1.500">
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_Ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
-                                            <LinearDoubleKeyFrame KeyTime="0:0:1.000" Value="1"/>
+                                            <LinearDoubleKeyFrame KeyTime="0:0:1.500" Value="1"/>
                                         </DoubleAnimationUsingKeyFrames>
                                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_Ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
                                             <LinearDoubleKeyFrame KeyTime="0:0:0.000" Value="0"/>
-                                            <LinearDoubleKeyFrame KeyTime="0:0:1.000" Value="1"/>
+                                            <LinearDoubleKeyFrame KeyTime="0:0:1.500" Value="1"/>
                                         </DoubleAnimationUsingKeyFrames>
                                         
-                                        <DoubleAnimation From="1" To="0" Duration="0:0:1.000" Storyboard.TargetName="PART_Ellipse" Storyboard.TargetProperty="(UIElement.Opacity)"/>
+                                        <DoubleAnimation From="1" To="0" Duration="0:0:1.500" Storyboard.TargetName="PART_Ellipse" Storyboard.TargetProperty="(UIElement.Opacity)"/>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
