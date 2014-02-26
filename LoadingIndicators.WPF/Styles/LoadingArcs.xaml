@@ -52,7 +52,7 @@
                                 </TransformGroup>
                             </Grid.RenderTransform>
                             <Canvas x:Name="PART_Canvas0" Opacity="1.0">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
+                                <Path Stroke="{TemplateBinding Foreground}" StrokeThickness="10">
                                     <Path.Data>
                                         <PathGeometry>
                                             <PathGeometry.Transform>
@@ -75,7 +75,7 @@
                             </Canvas>
 
                             <Canvas x:Name="PART_Canvas1" Opacity="0.3">
-                                <Path Stroke="{DynamicResource AccentColorBrush}" StrokeThickness="10">
+                                <Path Stroke="{TemplateBinding Foreground}" StrokeThickness="10">
                                     <Path.Data>
                                         <PathGeometry>
                                             <PathGeometry.Transform>
