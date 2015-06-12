@@ -2,7 +2,7 @@ LoadingIndicators.WPF
 ====================
 ![Demo](./demo.gif)
 
-LoadingIndicators.WPF is a collection of 8 animated loading indicators compatible with [MahApps.Metro](https://github.com/MahApps/MahApps.Metro).
+LoadingIndicators.WPF is a collection of 8 animated loading indicators for WPF compatible with [MahApps.Metro](https://github.com/MahApps/MahApps.Metro).
 
 ## Styles
 - Arcs
