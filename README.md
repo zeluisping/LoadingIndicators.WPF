@@ -19,6 +19,3 @@ LoadingIndicators.WPF is a collection of 8 animated loading indicators for WPF c
 - Easy activation/deactivation
 - Easy change of theme using resources
 - Out of the box [MahApps.Metro](https://github.com/MahApps/MahApps.Metro) compatibility
-
-
-Gitter chat: https://gitter.im/100GPing100/LoadingIndicators.WPF
