@@ -3,21 +3,21 @@
   <PropertyGroup>
     <TargetFrameworks>net45;net46;net47;netcoreapp3.0</TargetFrameworks>
     <AssemblyName>LoadingIndicators.WPF</AssemblyName>
-        <Title>LoadingIndicators.WPF</Title>
-        <RootNamespace>LoadingIndicators.WPF</RootNamespace>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Title>LoadingIndicators.WPF</Title>
+    <RootNamespace>LoadingIndicators.WPF</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-    <ItemGroup>
-        <Compile DependentUpon="%(Filename)" SubType="Code" Update="**\obj\**\*.g$(DefaultLanguageSourceExtension)" />
-        <Compile DependentUpon="%(Filename)" SubType="Designer" Update="**\*.xaml$(DefaultLanguageSourceExtension)" />
-    </ItemGroup>
+  <ItemGroup>
+    <Compile DependentUpon="%(Filename)" SubType="Code" Update="**\obj\**\*.g$(DefaultLanguageSourceExtension)" />
+    <Compile DependentUpon="%(Filename)" SubType="Designer" Update="**\*.xaml$(DefaultLanguageSourceExtension)" />
+  </ItemGroup>
 
-<Target Name="_SdkDesignTimeBuildAndIntelliSenseWorkaround" AfterTargets="_CheckCompileDesignTimePrerequisite">
-        <PropertyGroup>
-            <BuildingProject>false</BuildingProject>
-            <DesignTimeBuild>true</DesignTimeBuild>
-        </PropertyGroup>
-    </Target>
-    <Import Project="..\..\.paket\Paket.Restore.targets" />
+  <Target Name="_SdkDesignTimeBuildAndIntelliSenseWorkaround" AfterTargets="_CheckCompileDesignTimePrerequisite">
+    <PropertyGroup>
+      <BuildingProject>false</BuildingProject>
+      <DesignTimeBuild>true</DesignTimeBuild>
+    </PropertyGroup>
+  </Target>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
