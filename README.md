@@ -19,3 +19,16 @@ LoadingIndicators.WPF is a collection of 8 animated loading indicators for WPF c
 - Easy activation/deactivation
 - Easy change of theme using resources
 - Out of the box [MahApps.Metro](https://github.com/MahApps/MahApps.Metro) compatibility
+
+## Usage
+- Include Namespace
+```xml
+<Window ...
+        xmlns:li="http://github.com/zeluisping/loadingIndicators/xaml/controls">
+```
+- Add Loading indicator and select mode
+```xml
+<li:LoadingIndicator Grid.Column="0" Grid.Row="0" SpeedRatio="{Binding SpeedRatio}" IsActive="{Binding IsArcsActive}" Mode="Arcs" />
+```
+
+Note: Waves mode will be selected by default if left empty
