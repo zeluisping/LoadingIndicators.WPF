@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net45;net46;net47</TargetFrameworks>
+    <AssemblyName>LoadingIndicators.WPF.Demo</AssemblyName>
+    <RootNamespace>LoadingIndicatorsDemo</RootNamespace>
+    <DisableFody Condition="'$(Configuration)' == 'Debug'">true</DisableFody>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <NoWarn>SA1652</NoWarn>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LoadingIndicators.WPF\LoadingIndicators.WPF.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Remove="App.config" />
+    <AppConfigWithTargetPath Include="App.$(TargetFramework).config">
+      <TargetPath>$(AssemblyName).config</TargetPath>
+    </AppConfigWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile DependentUpon="%(Filename)" SubType="Code" Update="**\obj\**\*.g$(DefaultLanguageSourceExtension)" />
+    <Compile DependentUpon="%(Filename)" SubType="Designer" Update="**\*.xaml$(DefaultLanguageSourceExtension)" />
+  </ItemGroup>
+  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+</Project>

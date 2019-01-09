@@ -1,0 +1,141 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:LoadingIndicators.WPF">
+    <Style x:Key="LoadingIndicatorArcsRingStyleKey" TargetType="{x:Type controls:LoadingIndicator}">
+        <Style.Triggers>
+            <Trigger Property="Mode" Value="ArcsRing">
+                <Setter Property="Foreground" Value="{DynamicResource AccentColorBrush}"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Width" Value="40"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type controls:LoadingIndicator}">
+                            <Border x:Name="PART_Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="SizeStates">
+                                        <VisualState x:Name="Large" />
+                                        <VisualState x:Name="Small" />
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="ActiveStates">
+                                        <VisualState x:Name="Inactive"/>
+                                        <VisualState x:Name="Active">
+                                            <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.000" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas0" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.100" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.200" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.300" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.400" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas4" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.500" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas5" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.600" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas6" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                                <DoubleAnimationUsingKeyFrames BeginTime="0:0:0.700" RepeatBehavior="Forever" Storyboard.TargetName="PART_Canvas7" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.000" Value="1"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.100" Value="0.3"/>
+                                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.800" Value="0.3"/>
+                                                </DoubleAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+
+                                <Border.Resources>
+                                    <Style TargetType="{x:Type Canvas}">
+                                        <Setter Property="Opacity" Value="0.3"/>
+                                    </Style>
+
+                                    <Style TargetType="{x:Type Path}">
+                                        <Setter Property="StrokeThickness" Value="10"/>
+                                    </Style>
+                                </Border.Resources>
+
+                                <Grid Background="Transparent" Width="40" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                                    <Grid.RenderTransform>
+                                        <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                                    </Grid.RenderTransform>
+
+                                    <Canvas x:Name="PART_Canvas0">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="0" Y="-14"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 10,0 A 40,40 0 0 1 30,0"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas1">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="12" Y="-12"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 40,14 A 40,40 0 0 0 24,0"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas2">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="14" Y="0"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 40,10 A 40,40 0 0 1 40,30"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas3">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="12" Y="12"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 40,24 A 40,40 0 0 1 24,40"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas4">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="0" Y="14"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 10,40 A 40,40 0 0 0 30,40"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas5">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="-12" Y="12"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 0,24 A 40,40 0 0 0 14,40"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas6">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="-14" Y="0"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 0,10 A 40,40 0 0 0 0,30"/>
+                                    </Canvas>
+                                    <Canvas x:Name="PART_Canvas7">
+                                        <Canvas.RenderTransform>
+                                            <TranslateTransform X="-12" Y="-12"/>
+                                        </Canvas.RenderTransform>
+                                        <Path Stroke="{TemplateBinding Foreground}" Data="M 0,14 A 40,40 0 0 1 14,0"/>
+                                    </Canvas>
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
