@@ -1,14 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="MultiStyleExtension.cs" company="Procure Software Development">
-//     Copyright (c) 2019 Procure Software Development
-// </copyright>
-// <author></author>
-// <summary>
-//     
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Windows;
 using System.Windows.Markup;
 

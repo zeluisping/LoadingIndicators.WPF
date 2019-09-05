@@ -1,14 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="VisualStateUtilities.cs" company="Procure Software Development">
-//     Copyright (c) 2019 Procure Software Development
-// </copyright>
-// <author></author>
-// <summary>
-//     
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;

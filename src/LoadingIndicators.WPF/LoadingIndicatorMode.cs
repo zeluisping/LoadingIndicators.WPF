@@ -1,14 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="LoadingIndicatorMode.cs" company="Procure Software Development">
-//     Copyright (c) 2019 Procure Software Development
-// </copyright>
-// <author></author>
-// <summary>
-//     
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 
