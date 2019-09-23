@@ -1,0 +1,31 @@
+<Project>
+    <PropertyGroup>
+        <DefineConstants>$(DefineConstants)</DefineConstants>
+    </PropertyGroup>
+
+    <!-- AssemblyInfo -->
+    <PropertyGroup>
+        <Company></Company>
+        <Product>LoadingIndicators.WPF</Product>
+        <Copyright>Copyright © 2013 - $([System.DateTime]::Today.ToString(yyyy)) LoadingIndicators.WPF</Copyright>
+        <Description>A collection of 8 animated loading indicators for WPF.</Description>
+
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <Version>1.0.0.0</Version>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <InformationalVersion>1.0.0.0</InformationalVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <Optimize>false</Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Page Update="@(Page)" SubType="Designer" Generator="MSBuild:Compile" />
+    </ItemGroup>
+
+</Project>

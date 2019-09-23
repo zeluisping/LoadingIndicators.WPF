@@ -1,0 +1,25 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!-- NuGet -->
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <Authors>zeluisping, Victor Procure</Authors>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/zeluisping/LoadingIndicators.WPF/master/README.md</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/zeluisping/LoadingIndicators.WPF</PackageProjectUrl>
+        <PackageIconUrl>https://github.com/zeluisping/LoadingIndicators.WPF/raw/master/icon.png</PackageIconUrl>
+        <PackageTags>WPF;UI;Metro;Modern;Material;XAML;Toolkit;Library;.NET;OSS;OpenSource</PackageTags>
+        <PackageReleaseNotes>https://github.com/zeluisping/LoadingIndicators.WPF/releases</PackageReleaseNotes>
+        <RepositoryUrl>https://github.com/zeluisping/LoadingIndicators.WPF.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <GenerateLibraryLayout>true</GenerateLibraryLayout>
+    </PropertyGroup>
+    <!-- Sign assembly -->
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <!-- <SignAssembly>True</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(MSBuildProjectDirectory)\..\LoadingIndicators.WPF.public.snk</AssemblyOriginatorKeyFile>
+        <DelaySign>false</DelaySign>
+        <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign> -->
+    </PropertyGroup>
+    <PropertyGroup>
+        <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    </PropertyGroup>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.Targets', '$(MSBuildThisFileDirectory)../'))"/>
+</Project>
