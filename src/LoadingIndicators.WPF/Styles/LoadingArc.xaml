@@ -50,7 +50,6 @@
                                     <Grid.RenderTransform>
                                         <TransformGroup>
                                             <ScaleTransform ScaleX="0.5" ScaleY="0.5" />
-                                            <TranslateTransform X="10" Y="10" />
                                         </TransformGroup>
                                     </Grid.RenderTransform>
                                     <Canvas x:Name="PART_Canvas0" Opacity="0.7">
