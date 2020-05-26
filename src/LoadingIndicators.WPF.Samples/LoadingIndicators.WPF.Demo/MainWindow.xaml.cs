@@ -59,6 +59,7 @@ namespace LoadingIndicatorsDemo
             bool isringactive;
             bool isthreedotsactive;
             bool iswaveactive;
+            bool isarcactive;
 
             // Properties
             public double SpeedRatio
@@ -76,6 +77,18 @@ namespace LoadingIndicatorsDemo
             public string SpeedRatioText
             {
                 get { return this.SpeedRatio.ToString(); }
+            }
+            public bool IsArcActive
+            {
+                get { return isarcactive; }
+                set
+                {
+                    if (isarcactive != value)
+                    {
+                        isarcactive = value;
+                        OnPropertyChanged("IsArcActive");
+                    }
+                }
             }
             public bool IsArcsActive
             {
@@ -182,6 +195,7 @@ namespace LoadingIndicatorsDemo
             {
                 this.SpeedRatio = 1.0;
                 this.IsArcsActive = true;
+                this.IsArcActive = true;
                 this.IsArcsRingActive = true;
                 this.IsDoubleBounceActive = true;
                 this.IsFlipPlaneActive = true;

@@ -9,6 +9,9 @@ namespace LoadingIndicators.WPF
         [Description("LoadingIndicatorWaveStyle")]
         Wave,
 
+        [Description("LoadingIndicatorArcStyle")]
+        Arc,
+
         [Description("LoadingIndicatorArcsStyle")]
         Arcs,
 
@@ -29,7 +32,6 @@ namespace LoadingIndicators.WPF
 
         [Description("LoadingIndicatorThreeDotsStyle")]
         ThreeDots
-        
     }
 
     internal static class LoadingIndicatorModeUtility

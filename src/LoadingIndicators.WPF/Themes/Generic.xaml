@@ -4,6 +4,7 @@
                     xmlns:styles="clr-namespace:LoadingIndicators.WPF.Styles">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Colors.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingArc.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingArcs.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingArcsRing.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingDoubleBounce.xaml"/>
@@ -14,6 +15,7 @@
         <ResourceDictionary Source="pack://application:,,,/LoadingIndicators.WPF;component/Styles/LoadingWave.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
+    <Style x:Key="LoadingIndicatorArcStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorArcStyleKey}"/>
     <Style x:Key="LoadingIndicatorArcsStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorArcsStyleKey}"/>
     <Style x:Key="LoadingIndicatorArcsRingStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorArcsRingStyleKey}"/>
     <Style x:Key="LoadingIndicatorDoubleBounceStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorDoubleBounceStyleKey}"/>
@@ -23,5 +25,5 @@
     <Style x:Key="LoadingIndicatorThreeDotsStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorThreeDotsStyleKey}"/>
     <Style x:Key="LoadingIndicatorWaveStyle" TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{StaticResource LoadingIndicatorWaveStyleKey}"/>
 
-    <Style TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{styles:MultiStyle LoadingIndicatorArcsStyle LoadingIndicatorArcsRingStyle LoadingIndicatorDoubleBounceStyle LoadingIndicatorFlipPlaneStyle LoadingIndicatorPulseStyle LoadingIndicatorRingStyle LoadingIndicatorThreeDotsStyle LoadingIndicatorWaveStyle}" />
+    <Style TargetType="{x:Type controls:LoadingIndicator}" BasedOn="{styles:MultiStyle LoadingIndicatorArcStyleKey LoadingIndicatorArcsStyle LoadingIndicatorArcsRingStyle LoadingIndicatorDoubleBounceStyle LoadingIndicatorFlipPlaneStyle LoadingIndicatorPulseStyle LoadingIndicatorRingStyle LoadingIndicatorThreeDotsStyle LoadingIndicatorWaveStyle}" />
 </ResourceDictionary>
